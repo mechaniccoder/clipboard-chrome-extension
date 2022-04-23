@@ -1,0 +1,22 @@
+{
+  "name": "Copy Board",
+  "description": "Extension to copy a text or code.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "mechaniccoder",
+  "background": {
+    "service_worker": "./src/background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_title": "Copy whatever you want to use later.",
+    "default_popup": "./src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://127.0.0.1/*"],
+      "css": ["./src/style.css"],
+      "js":["./src/controller/render.js"]
+    }
+  ]
+}
