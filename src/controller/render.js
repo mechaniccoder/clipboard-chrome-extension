@@ -74,9 +74,6 @@ class ClipboardView {
   }
 
   render(clipboards) {
-    // if (this.container === null) {
-    //   this.appendContainer()
-    // }
     this.container.innerHTML = this.template(clipboards)
   }
 }
