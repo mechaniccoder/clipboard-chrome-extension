@@ -127,6 +127,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chrome-types@npm:^0.1.103":
+  version: 0.1.103
+  resolution: "chrome-types@npm:0.1.103"
+  checksum: 6fc5623b7f7f3882f538afba5be72d89ca0f6c23563c47ffd53e0cd25455b528850ec42579438ca9b34d49bbbb4b1f7ccd1fbd911a49377a2ee2e52aa7758789
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^2.0.1":
   version: 2.0.1
   resolution: "color-convert@npm:2.0.1"
@@ -154,6 +161,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "copyboard-extension@workspace:."
   dependencies:
+    chrome-types: ^0.1.103
     eslint: ^8.14.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.0.0
